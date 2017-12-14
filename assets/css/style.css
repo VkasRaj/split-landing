@@ -50,9 +50,20 @@ nav {
     height: 100%;
     top: 0;
     right: 0;
-    transition: all .3s cubic-bezier(0.94,-0.02, 0.6, 0.83);
     z-index: 100;
     transform: translateX(100%);
+    transition: all .3s cubic-bezier(0.94,-0.02, 0.6, 0.83);
+}
+.menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transform: translateX(100%);
+    transition: all .3s cubic-bezier(0.94,-0.02, 0.6, 0.83);
 }
 /* .menu-drawer.left-drawer {
     transform: translateX(-100%);
@@ -62,7 +73,7 @@ nav {
     transform: translateX(100%);
     right: 0;
 } */
-.menu-drawer.is-drawer-show {
+.is-drawer-show {
     transform: translateX(0);
 }
 ul.no-bullets {
